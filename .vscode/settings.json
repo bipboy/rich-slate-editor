@@ -1,0 +1,138 @@
+{
+  //fonts
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  // Controls the rendering size of tabs in characters.
+  "editor.tabSize": 2,
+  // When opening a file, `editor.tabSize` and `editor.insertSpaces` will NOT be detected based on the file contents.
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  // When enabled, will trim trailing whitespace when you save a file.
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  // Controls whether the editor should render whitespace characters
+  "editor.renderWhitespace": "all",
+  // Controls if the editor will insert spaces for tabs.
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true,
+  },
+  "editor.insertSpaces": true,
+  "editor.suggest.preview": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.customGlyphs": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/coverage": true,
+    "**/*.scss.ts": true,
+    "**/.eslintcache": true
+  },
+  "files.watcherExclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/lib": true,
+    "**/lib-commonjs": true,
+    "**/lib-amd": true,
+    "**/temp": true,
+    "**/dist": true,
+    "**/dist-storybook": true,
+    "**/*.scss.ts": true,
+    "**/coverage": true
+  },
+  // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the file.exclude setting.
+  "search.exclude": {
+    "common/temp": true,
+    "**/node_modules": true,
+    "**/lib": true,
+    "**/lib-amd": true,
+    "**/lib-commonjs": true,
+    "**/dist": true,
+    "**/dist-storybook": true,
+    "**/*.scss.ts": true,
+    "**/temp": true
+  },
+  "editor.rulers": [
+    80
+  ],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ], // infer working directory based on .eslintrc/package.json location
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.tsdk": "/usr/lib/node_modules/typescript/lib",
+  "files.associations": {
+    "**/*.json.hbs": "jsonc"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ]
+}

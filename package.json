@@ -1,0 +1,62 @@
+{
+  "name": "@bipboys/rich-slate-editor",
+  "version": "0.0.5",
+  "description": "React rich-editor based on Slate and Baseweb frameworks",
+  "license": "MIT",
+  "author": "Bipboys Dev Team",
+  "sideEffects": false,
+  "main": "./build/node/index.js",
+  "module": "./build/esm/index.js",
+  "types": "./types/index.d.ts",
+  "files": [
+    "build/",
+    "!build/*.tsbuildinfo",
+    "!build/**/tests/",
+    "index.js",
+    "index.esnext"
+  ],
+  "scripts": {
+    "build": "pnpm build:clean && pnpm build-esm && pnpm build-node && pnpm build:types",
+    "build-esm": "swc ./src -d build/esm -C module.type=es6",
+    "build-node": "swc ./src -d build/node -C module.type=commonjs",
+    "build:clean": "rimraf ./build && mkdir build",
+    "build:types": "tsc -p tsconfig.json",
+    "clean": "rimraf ./node_modules && pnpm build:clean"
+  },
+  "dependencies": {
+    "baseui": "^12.2.0",
+    "deep-equal": "^2.0.5",
+    "is-hotkey": "^0.2.0",
+    "is-url": "^1.2.4",
+    "lodash": "^4.17.21",
+    "react-is": "^18.2.0",
+    "react-uid": "^2.3.2",
+    "slate": "0.82.1",
+    "slate-history": "0.66.0",
+    "slate-react": "0.83.1",
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@bipboys/typescript-preset": "0.0.1",
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.3.7",
+    "@types/is-hotkey": "^0.1.7",
+    "@types/lodash": "^4.14.186",
+    "@types/node": "^18.8.5",
+    "@types/ramda": "^0.28.15",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
+    "@types/react-is": "^17.0.3",
+    "@types/styletron-engine-atomic": "^1.1.1",
+    "@types/styletron-react": "^5.0.3",
+    "@types/styletron-standard": "^2.0.2",
+    "cross-env": "^7.0.3",
+    "rimraf": "^3.0.2",
+    "styletron-react": "6.1.0",
+    "typescript": "4.8.4"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
+  }
+}
