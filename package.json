@@ -1,6 +1,6 @@
 {
   "name": "@bipboys/rich-slate-editor",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "React rich-editor based on Slate and Baseweb frameworks",
   "license": "MIT",
   "author": "Bipboys Dev Team",
@@ -10,10 +10,10 @@
   "types": "./types/index.d.ts",
   "files": [
     "build/",
+    "types/",
     "!build/*.tsbuildinfo",
     "!build/**/tests/",
-    "index.js",
-    "index.esnext"
+    "index.js"
   ],
   "scripts": {
     "build": "pnpm build:clean && pnpm build-esm && pnpm build-node && pnpm build:types",
