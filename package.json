@@ -1,7 +1,15 @@
 {
   "name": "@bipboys/rich-slate-editor",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "React rich-editor based on Slate and Baseweb frameworks",
+  "homepage": "https://github.com/bipboy/rich-slate-editor#readme",
+  "bugs": {
+    "url": "https://github.com/bipboy/rich-slate-editor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bipboy/rich-slate-editor"
+  },
   "license": "MIT",
   "author": "Bipboys Dev Team",
   "sideEffects": false,
