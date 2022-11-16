@@ -117,5 +117,5 @@ artifacts
 yarn.lock
 !/yarn.lock
 
-build
-types
+/build
+/types
