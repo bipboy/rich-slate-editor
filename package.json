@@ -1,6 +1,6 @@
 {
   "name": "@bipboys/rich-slate-editor",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "React rich-editor based on Slate and Baseweb frameworks",
   "homepage": "https://github.com/bipboy/rich-slate-editor#readme",
   "bugs": {
@@ -39,9 +39,9 @@
     "lodash": "^4.17.21",
     "react-is": "^18.2.0",
     "react-uid": "^2.3.2",
-    "slate": "0.85.0",
-    "slate-history": "0.85.0",
-    "slate-react": "0.83.2",
+    "slate": "0.86.0",
+    "slate-history": "0.86.0",
+    "slate-react": "0.86.0",
     "tslib": "^2.4.1"
   },
   "devDependencies": {
