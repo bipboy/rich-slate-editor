@@ -1,6 +1,6 @@
 {
   //fonts
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Cascadia Code",
   "editor.fontLigatures": true,
   // Controls the rendering size of tabs in characters.
   "editor.tabSize": 2,
