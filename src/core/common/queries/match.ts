@@ -1,3 +1,4 @@
+import type {BaseElement} from 'slate';
 import {Editor} from 'slate';
 import {TEditor} from '../../types/slate/TEditor';
 import {castArray} from 'lodash';
@@ -36,11 +37,11 @@ export const matchPredicate =
  * - `match` can be an object predicate where one of the values should include the node value.
  * Example: { type: ['1', '2'] } will match the nodes having one of these 2 types.
  */
-export const getQueryOptions = <T>(editor: TEditor, options: any) => {
+export const getQueryOptions = (editor: TEditor, options: any) => {
   return {
     ...options,
-    match: (n: T) =>
-      match<T>(n, options.match) &&
+    match: (n: BaseElement) =>
+      match<BaseElement>(n, options.match) &&
       (!options?.block || Editor.isBlock(editor, n))
   };
 };
