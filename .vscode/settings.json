@@ -14,8 +14,8 @@
   "editor.renderWhitespace": "all",
   // Controls if the editor will insert spaces for tabs.
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.organizeImports": true,
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
   },
   "editor.insertSpaces": true,
   "editor.suggest.preview": true,
