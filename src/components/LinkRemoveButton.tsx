@@ -3,9 +3,9 @@ import * as React from 'react';
 import {Button, ButtonProps} from 'baseui/button';
 import {hasActiveLinkAtSelection, isLinkActive} from '../queries';
 
-import {unwrapNodes} from '../core';
-import {useSlate} from 'slate-react';
 import {useStyletron} from 'baseui';
+import {useSlate} from 'slate-react';
+import {unwrapNodes} from '../core';
 
 // import {unwrapLink} from '../transforms';
 
@@ -85,6 +85,7 @@ export const LinkRemoveButton = ({
       {...props}
     >
       {React.cloneElement(children, {
+        // @ts-expect-error
         size: '20px',
         fill: !isLinkActive(editor)
           ? theme.colors.buttonDisabledText

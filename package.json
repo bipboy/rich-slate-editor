@@ -1,6 +1,6 @@
 {
   "name": "@bipboys/rich-slate-editor",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "description": "React rich-editor based on Slate and Baseweb frameworks",
   "homepage": "https://github.com/bipboy/rich-slate-editor#readme",
   "bugs": {
@@ -37,34 +37,34 @@
     "is-hotkey": "^0.2.0",
     "is-url": "^1.2.4",
     "lodash": "^4.17.21",
-    "react-is": "^18.3.1",
+    "react-is": "^19.2.0",
     "react-uid": "^2.4.0",
-    "slate": "0.94.1",
+    "slate": "0.118.1",
     "slate-history": "0.113.1",
-    "slate-react": "0.94.2",
+    "slate-react": "0.118.2",
     "tslib": "^2.8.1"
   },
   "devDependencies": {
     "@bipboys/typescript-preset": "0.0.1",
-    "@swc/cli": "^0.7.7",
-    "@swc/core": "^1.12.0",
+    "@swc/cli": "^0.7.8",
+    "@swc/core": "^1.13.5",
     "@types/is-hotkey": "^0.1.10",
-    "@types/lodash": "^4.17.17",
-    "@types/node": "^24.0.1",
-    "@types/ramda": "^0.30.2",
-    "@types/react": "18.3.23",
-    "@types/react-dom": "18.3.7",
-    "@types/react-is": "^18.3.1",
+    "@types/lodash": "^4.17.20",
+    "@types/node": "^24.9.1",
+    "@types/ramda": "^0.31.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@types/react-is": "^19.2.0",
     "@types/styletron-engine-atomic": "^1.1.4",
     "@types/styletron-react": "^5.0.8",
     "@types/styletron-standard": "^2.0.5",
-    "cross-env": "^7.0.3",
+    "cross-env": "^10.1.0",
     "rimraf": "^6.0.1",
     "styletron-react": "6.1.1",
-    "typescript": "5.8.3"
+    "typescript": "5.9.3"
   },
   "peerDependencies": {
-    "react": ">=18.2.0",
-    "react-dom": ">=18.2.0"
+    "react": ">=19.2.0",
+    "react-dom": ">=19.2.0"
   }
 }

@@ -3,11 +3,11 @@ import * as React from 'react';
 import {Editable, Slate, withReact} from 'slate-react';
 import {useEditorConfig, useSelection} from '../hooks';
 
-import {Toolbar} from '../toolbar';
-import {createEditor} from 'slate';
-import {isLinkNodeAtSelection} from '../queries';
 import {useStyletron} from 'baseui';
+import {createEditor} from 'slate';
 import {withHistory} from 'slate-history';
+import {isLinkNodeAtSelection} from '../queries';
+import {Toolbar} from '../toolbar';
 
 export function Editor({document, onChange}) {
   const [css, theme] = useStyletron();
@@ -42,7 +42,7 @@ export function Editor({document, onChange}) {
   }
 
   return (
-    <Slate editor={editor} value={document} onChange={onChangeLocal}>
+    <Slate editor={editor} initialValue={document} onChange={onChangeLocal}>
       <Toolbar selectionForLink={selectionForLink} />
       <div
         className={css({

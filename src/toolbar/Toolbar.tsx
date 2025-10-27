@@ -28,7 +28,6 @@ import {
 import {useStyletron} from 'baseui';
 
 interface BaseProps {
-  className: string;
   [key: string]: unknown;
 }
 
@@ -36,7 +35,7 @@ type OrNull<T> = T | null;
 
 const Menu = React.forwardRef(
   (
-    {className, ...props}: React.PropsWithChildren<BaseProps>,
+    {...props}: React.PropsWithChildren<BaseProps>,
     ref: React.Ref<OrNull<HTMLDivElement>>
   ) => {
     const [css, theme] = useStyletron();
@@ -56,7 +55,6 @@ const Menu = React.forwardRef(
       borderTopRightRadius: '6px'
     });
 
-    // @ts-expect-error
     return <div {...props} ref={ref} className={menuCx} />;
   }
 );
@@ -66,13 +64,7 @@ const ToolbarComponent = React.forwardRef(
     {className, ...props}: React.PropsWithChildren<BaseProps>,
     ref: React.Ref<OrNull<HTMLDivElement>>
   ) => {
-    return (
-      <Menu
-        {...props}
-        // @ts-expect-error
-        ref={ref}
-      />
-    );
+    return <Menu {...props} ref={ref} />;
   }
 );
 

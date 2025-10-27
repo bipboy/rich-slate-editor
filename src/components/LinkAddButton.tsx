@@ -1,15 +1,15 @@
 import * as React from 'react';
 
-import {BaseEditor, Location} from 'slate';
 import {Button, ButtonProps} from 'baseui/button';
+import {BaseEditor, Location} from 'slate';
 import {RichEditor, getAbove, toggleLinkAtSelection} from '..';
 
+import {useStyletron} from 'baseui';
 import {FormControl} from 'baseui/form-control';
 import {Input} from 'baseui/input';
 import {Popover} from 'baseui/popover';
-import {hasActiveLinkAtSelection} from '../queries/hasActiveLinkAtSelection';
 import {useSlate} from 'slate-react';
-import {useStyletron} from 'baseui';
+import {hasActiveLinkAtSelection} from '../queries/hasActiveLinkAtSelection';
 
 export interface LinkButtonProps extends ButtonProps {
   openInNewTab: boolean;
@@ -208,6 +208,7 @@ export const LinkAddButton = ({
           {...props}
         >
           {React.cloneElement(children, {
+            // @ts-expect-error
             size: '20px',
             fill: theme.colors.primary700
           })}
