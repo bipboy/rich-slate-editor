@@ -32,7 +32,7 @@
     "clean": "rimraf ./node_modules && npm run build:clean"
   },
   "dependencies": {
-    "baseui": "^15.0.0",
+    "baseui": "^18.2.0",
     "deep-equal": "^2.2.3",
     "is-hotkey": "^0.2.0",
     "is-url": "^1.2.4",
